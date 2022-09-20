@@ -77,8 +77,7 @@ def grad_tests_softmax(skipgram, dummy_tokens, dummy_vectors, dataset):
                                    [ 0.07009355, -0.03216399, -0.24466386],
                                    [ 0.09472154, -0.04346509, -0.33062865],
                                    [-0.13638384,  0.06258276,  0.47605228]]
-       #######  
-       ########              
+                     
     assert np.allclose(output_gradCenterVecs, expected_gradCenterVecs), \
            "Your gradCenterVecs do not match expected gradCenterVecs."
     assert np.allclose(output_gradOutsideVectors, expected_gradOutsideVectors), \
